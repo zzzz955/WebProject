@@ -1,0 +1,15 @@
+# Node.js 관련
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# 빌드 결과
+/dist/
+/build/
+/out/
+
+# 환경 파일
+.env
+.env.local

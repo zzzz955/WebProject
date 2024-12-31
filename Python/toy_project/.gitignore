@@ -1,0 +1,14 @@
+# 파이썬 가상환경 및 패키지
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE 설정
+/.idea/
+/.vscode/
+
+# 환경 파일
+.env
+.env.local
