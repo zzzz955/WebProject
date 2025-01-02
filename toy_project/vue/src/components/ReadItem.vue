@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     async fetchItems() {
-      const response = await fetch('http://localhost:5000/items');
+      const response = await fetch('http://43.203.231.68:5000/items');
       const data = await response.json();
       this.items = data;
     },

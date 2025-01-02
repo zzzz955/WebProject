@@ -9,7 +9,7 @@ export default {
     },
     methods: {
       async fetchItem() {
-        const response = await fetch(`http://localhost:5000/items/${this.$route.params.id}`);
+        const response = await fetch(`http://43.203.231.68:5000/items/${this.$route.params.id}`);
         const data = await response.json();
         this.item = data;
       },
@@ -20,7 +20,7 @@ export default {
         }
   
         try {
-          const response = await fetch(`http://localhost:5000/items/${this.item.id}`, {
+          const response = await fetch(`http://43.203.231.68:5000/items/${this.item.id}`, {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ export default {
       },
       async deleteItem() {
         try {
-          const response = await fetch(`http://localhost:5000/items/${this.item.id}`, {
+          const response = await fetch(`http://43.203.231.68:5000/items/${this.item.id}`, {
             method: 'DELETE'
           });
   
@@ -49,7 +49,7 @@ export default {
         }
       },
       goBack() {
-        location.href = 'http://localhost:8080/';
+        location.href = '..';
       }
     }
   };

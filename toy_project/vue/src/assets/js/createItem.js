@@ -13,7 +13,7 @@ export default {
         }
   
         try {
-          const response = await fetch('http://localhost:5000/items', {
+          const response = await fetch('http://43.203.231.68:5000/items', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
@@ -28,7 +28,7 @@ export default {
           alert('아이템이 성공적으로 추가되었습니다.');
           this.name = '';
           this.description = '';
-          location.href = 'http://localhost:8080/';
+          location.href = '..';
         } catch (error) {
           alert(error.message);
         }
