@@ -13,7 +13,7 @@ export default {
         }
   
         try {
-          const response = await fetch('http://localhost:5000/items', {
+          const response = await fetch('http://localhost:8000/items', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
